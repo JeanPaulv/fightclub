@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registrar</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flexboxgrid.min.css' %}">
+</head>
+<body>
+     <header> 
+                <img class="logo" src="{% static '_img/letras_blancas.jpg'%}" alt="logo">
+                <nav>  
+                    <ul class="nav_links">
+                        <li> <a href="/">Inicio</a></li>
+                        <li> <a href="#">Jugar</a></li>
+                        <li> <a href="#">Perfil</a></li>
+                       </ul>   
+                   </nav>
+                   <a class="cta" href="javascript:inicio()"> <button>Iniciar sesión</button> </a>
+     </header>  
+    
+     <div class="formula" style="width: 400px; border-collapse: collapse;">
+
+         <form class="login" action="login" method="POST">
+                
+           
+
+                    {% csrf_token %}
+
+                    <p>Usuario o Email</p>
+                    <input type="text" name="nombre_usuario" placeholder="nombre_usuario" >
+                    <p>Contraseña</p>
+                    <input type="password" name="password" placeholder="password" >
+                    <br>
+                    <input type="submit" value="Iniciar"> 
+                    
+                    <div class="avisoregistro"> 
+
+                        {% for message in messages %}
+                        <h4>{{message}}</h4> 
+
+                        {% endfor %}
+                     </div>
+
+              
+                
+         </form>
+
+     </div>
+
+
+
+
+
+
+
+     <footer>
+                <div class="row">
+                    <div class="col-xs-6 footsies">
+                        <a href="www.duoc.cl">©2019 Duoc UC </a><br>
+                        <img class="logo2" src="_img/Super_Smash_Bros._Ultimate_Logo.png" alt="SMASHHHHH BROTHEEEEEEEEEEEEEEEEEERS">
+    
+                    </div>
+    
+                    <div class="col-xs-6 footsies">
+                        <br>
+                        <br>
+                        
+                        joh.castillom@alumnos.duoc.cl <br>
+                        jea.villagra@alumnos.duoc.cl <br>
+                        Escuela de Informática y Telecomunicaciones
+                    </div>
+    
+                </div>
+        </footer>    
+</body>
+
+
+      
+</html>

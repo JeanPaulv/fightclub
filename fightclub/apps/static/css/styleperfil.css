@@ -1,0 +1,82 @@
+
+
+.contenedorperfil{
+    width: auto;
+    height: auto;
+    max-width: 1400px;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    bottom: 30%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(auto, auto);
+    grid-gap: 10px;
+    background: #272a33;
+}
+
+.contenedorperfil >div ,
+.contenedorperfil .portada,
+.contenedorperfil .avatar,
+.contenedorperfil .niveles{
+color: rgb(231, 223, 238);
+padding: 1px;
+border-radius: 4px;
+text-align: center;
+
+}
+
+.contenedorperfil .portada{
+
+    grid-column-start: 2;
+    grid-column-end: 8;
+
+}   
+.contenedorperfil .portada img{
+   
+    min-width: 100%;
+    min-height: 340px;
+    max-width: 100%;
+    max-height:340px;
+    border: 10px solid rgb(8, 51, 71);
+    border-radius: 50px;
+    }
+
+.contenedorperfil .avatar {
+
+grid-column-start: 1;
+grid-column-end: 5;
+grid-row-start: 2;
+text-align: center;
+border-radius: 40px;
+background-color: #272a33;
+
+
+}
+.contenedorperfil  .avatar img{
+        background-color: rgb(94, 20, 20);
+        border: none;
+        border: 6px solid rgb(15, 108, 151);
+        border-radius: 90px;
+        cursor: pointer;
+        transition: all 2s ease 0s;
+        height: 190px;
+        width: 250px;
+
+        }
+
+.contenedorperfil .barras{
+    text-align: center;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    border: 6px solid rgb(15, 108, 151);
+    border-radius: 10px;
+    background-color: #272a33;   
+}
+
+.contenedorperfil .descripcion{
+ grid-row-start: 3;
+ grid-column-start:1;
+ grid-column-end: 5;
+ background-color: #272a33;
+}

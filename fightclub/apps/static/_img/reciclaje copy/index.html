@@ -1,0 +1,134 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flexboxgrid.min.css' %}">
+
+</head>
+
+<body>
+
+    <div class="inicio" id="ini">
+        <div id="cerrar">
+
+            <a href="javascript:cerrar()"><img class="cerrar" src="{% static '_img/Cerrar.svg' %}"> </a>
+
+        </div>
+
+        <br>
+
+        Bienvenido a Fight Club
+        {% for message in messages %}
+        <h4>{{message}}</h4> 
+
+        {% endfor %}
+        <form class="login" method="POST">
+            <div class="sesion">
+                
+                {% csrf_token %}
+                <ul>
+
+                    <li>    
+                        <input type="text" name="username" placeholder="Usuario" aria-label="Search">
+                    </li>
+                    <li>
+                        <input type="password" name="password" placeholder="Contraseña" aria-label="Search">
+                    </li>
+                    
+                    <li>
+                        <button type="submit">Ingresar</button>
+                    </li>
+                    <li>
+                        <a class="csm" href="register">Registrarse</a>
+                    </li>
+                    
+
+
+                </ul>
+                
+                
+
+            </div>
+
+            
+        </form>
+    </div>
+
+    <header>
+            <img class="logo" src="_img/letras_blancas.jpg" alt="logo">
+            <nav>
+                <ul class="nav_links">
+                    <li> <a href="/">Inicio</a></li>
+                    <li> <a href="base"> BASEEE    </a></li>
+                    {% if user.is_authenticated %}
+                    
+                    <li> <a href="#">Jugar</a></li>
+                    <li> <a href="perfil.html">Usuario</a></li>
+                    Bienvenido, {{user.username}}
+                    <li><a href="logout">Desconectar</a></li>
+                    
+                     {% else %}
+                     <li> <a href="login">Iniciar sesion</a>  </li>
+                     <li> <a href="register">Registrarse </a></li>
+                     
+                     {% endif %}
+                </ul>
+            </nav>
+
+
+
+    </header>
+
+    <p>Aprender hacer esta wea mejor </p>
+
+
+
+    <footer>
+        <div class="row">
+            <div class="col-xs-6 footsies">
+                <a href="www.duoc.cl">©2019 Duoc UC </a><br>
+                <img class="logo2" src="_img/Super_Smash_Bros._Ultimate_Logo.png"
+                    alt="SMASHHHHH BROTHEEEEEEEEEEEEEEEEEERS">
+
+            </div>
+
+            <div class="col-xs-6 footsies">
+                <br>
+                <br>
+
+                joh.castillom@alumnos.duoc.cl <br>
+                jea.villagra@alumnos.duoc.cl <br>
+                Escuela de Informática y Telecomunicaciones
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script>
+
+        function inicio() {
+
+            document.getElementById("ini").style.display = "block";
+
+        }
+
+        function cerrar() {
+
+            document.getElementById("ini").style.display = "none";
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

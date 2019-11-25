@@ -1,0 +1,316 @@
+
+/* Header*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:#272a33;
+    font-family: "Quantico" , sans-serif;
+
+}
+
+header{ 
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 10%;
+    border-bottom: 2px solid rgb(57, 126, 126);
+}
+
+header .logo{
+    width: 200px; height: 100px;
+    cursor: pointer;
+    margin-right: auto; 
+}
+
+.nav_links{
+
+    list-style: none;
+}
+.nav_links li{
+
+display: inline-block;
+padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    display: block;
+    padding: 2px;
+}
+.nav_links > li {
+    float: left;
+}
+
+.usuario{
+ max-width: 150px;
+ position: absolute;
+ display: none;
+ text-align: left;
+
+}
+
+.nav_links li a:hover {
+    background-color: midnightblue;
+}
+
+.nav_links li:hover > .usuario {
+    display: block;
+}
+
+li,a,button, .form-inline{
+
+    font-family: "Quantico" , sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: whitesmoke;
+    }
+
+/* footer */
+
+footer{
+
+    color: antiquewhite;
+    width: 100%;
+    background: #272a33;
+    border-top: 2px solid rgb(57, 126, 126);
+
+   }
+
+.footer-total{
+width: 100%;
+max-width: 1200px;
+margin: auto;
+}
+.footer-cuerpo{
+display: flex;
+justify-content: space-between;
+padding: 10px;
+}
+.footer1{
+
+max-width: 400px;
+padding: 10px;
+}
+
+.footer2{
+max-width: 400px;
+margin-top: 10px;
+}
+
+.footeroneway{
+max-width: 400px;
+}
+
+   .logo2 {
+   
+   width: 200px; height: 200px;
+   
+   }
+   .logoone {
+   
+    width: 200px; height: 200px;
+    
+    }
+
+/* Login */
+
+.formula{
+    border-collapse: collapse;
+    font-family: Verdana;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: rgb(236, 236, 236);
+    border-style: solid;
+    border-width: 3px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(7, 3, 3);
+}
+
+.login p{
+font-size: 25px;
+color: white;
+background-color: rgb(7, 3, 3);
+text-align: center;
+}
+
+.login{
+    padding: 30px;
+    background-color: rgb(7, 3, 3);
+    text-align: center;
+    }
+
+.login input{
+    text-align: center;
+    background-color: rgb(7, 3, 3);
+    padding: 5px;
+    margin: 25px;
+    font-size: 23px;
+    color: white;
+}
+.login .mid {
+background-color: rgb(7, 3, 3);
+text-align: center;
+
+}
+.login .avisoregistro h4{
+    background: rgb(7, 3, 3);
+    color: rgb(245, 153, 14);
+    margin-bottom: 15px;
+}
+
+.login h5{
+    background: rgb(7, 3, 3);
+    color: white;
+}
+.login h4{
+    margin-top: 10px;
+    background: rgb(7, 3, 3);
+    color: rgb(58, 48, 150);
+}
+
+/*Register*/
+
+.formula{
+    border-collapse: collapse;
+    font-family: Verdana;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: rgb(57, 126, 126);
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+}
+
+.formu p{
+color: white    ;
+background-color: rgb(7, 3, 3);
+text-align: center;
+}
+
+
+.formu {
+    background-color: rgb(7, 3, 3);
+    text-align: center;
+    }
+
+.formu input{
+    text-align: center;
+    background-color: rgb(7, 3, 3);
+    padding: 3px;
+    margin: 10px;
+    font-size: 23px;
+    color: white;
+   
+}
+.formu .mid {
+background-color: rgb(7, 3, 3);
+text-align: center;
+
+}
+.formu .mid button{
+background-color: grey;
+}
+
+.formu .avisoregistro h4{
+    background: rgb(7, 3, 3);
+    color: rgb(245, 153, 14);
+    margin-bottom: 15px;
+}
+
+/*perfil*/
+
+.perfilusuario{
+    border-bottom: 2px solid paleturquoise;
+    border-left: 2px solid paleturquoise;
+    border-right: 2px solid paleturquoise;;
+    border-top: 2px solid paleturquoise; 
+    margin-left: 1%;
+    margin-right: 1%;
+    color: red;
+}
+
+.perfilusuario h1{
+text-align: center; 
+
+}
+.perfilusuario img{
+    padding-left: 40px; 
+}
+
+.fotosperfil{
+
+    border-bottom: 2px solid paleturquoise;
+    border-left: 2px solid paleturquoise;
+    border-right: 2px solid paleturquoise;;
+    border-top: 2px solid paleturquoise; 
+    margin-left: 1%;
+    margin-right: 1%;
+    color: red;
+}
+
+.fotosperfil .fotoperfil{
+
+    
+    border-bottom: 2px solid paleturquoise;
+    border-left: 2px solid paleturquoise;
+    border-right: 2px solid paleturquoise;;
+    border-top: 2px solid paleturquoise; 
+   
+    
+
+}
+.fotosperfil .portada{
+    border-bottom: 2px solid paleturquoise;
+    border-left: 2px solid paleturquoise;
+    border-right: 2px solid paleturquoise;;
+    border-top: 2px solid paleturquoise; 
+    color: red;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.fotosperfil .portada img{
+width: 100%;
+height: 100%;
+max-height: 500px;
+
+}
+.fotosperfil .fotoydescripcion{
+display: grid;
+border: 2px solid red;
+grid-template-columns: repeat(2,1fr);
+
+
+}
+.fotosperfil .fotoydescripcion .avatar{
+    padding: 9px 25PX;
+    background-color: rgb(190, 71, 71);
+    border: none;
+    border-radius: 70px;
+    cursor: pointer;
+    transition: all 1s ease 0s;
+    max-width: 300px;
+    max-height: 400px;
+    margin-left: 4.7%
+    }
+    .fotosperfil .fotoydescripcion p{
+     margin-left: 9.0%;
+     font-size: 200%;  
+     }
+
+     
+      .fotosperfil .fotoydescripcion  .avatar{
+        margin-left: -1px;
+        color: brown;
+      }
